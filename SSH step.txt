@@ -1,0 +1,28 @@
+
+In git bash
+1) ssh-keygen -t rsa -b 4096 -C "<input email addresss here>"
+2) then press enter when prompt which file to save the key 
+  (if already exist press enter again)
+3) enter a passphrase
+4) enter again
+4) eval $(ssh-agent -s)
+5) ssh-add ~/.ssh/id_rsa
+6) enter the same passphrase
+7) clip < ~/.ssh/id_rsa.pub
+
+In github remote
+1) click profile picture
+2) click on settings
+3) click on SSH and GPG keys on the left
+4) click on new SSH key
+5) give it a name and paste the key
+
+In vscode terminal
+1) git init
+2) make some files
+3) git commit -am "initial commit"
+4) copy the SSH url in github
+5) git remote add origin <paste SSH url here>
+6) git push origin master
+7) enter paraphrase
+8) done.
