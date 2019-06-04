@@ -7,7 +7,7 @@ In git bash
 4) enter again
 5) eval $(ssh-agent -s)
 6) ssh-add ~/.ssh/id_rsa
-7) enter the same passphrase
+7) (enter the same passphrase if have paraphrase)
 8) clip < ~/.ssh/id_rsa.pub
 
 In github remote
