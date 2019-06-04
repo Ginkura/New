@@ -1,14 +1,14 @@
 
 In git bash
 1) ssh-keygen -t rsa -b 4096 -C "<input email addresss here>"
-2) then press enter when prompt which file to save the key 
-  (if already exist press enter again)
+2) copy the default path then press enter when prompt which file to save the key 
+   (if already exist press enter again)
 3) enter a passphrase
 4) enter again
-4) eval $(ssh-agent -s)
-5) ssh-add ~/.ssh/id_rsa
-6) enter the same passphrase
-7) clip < ~/.ssh/id_rsa.pub
+5) eval $(ssh-agent -s)
+6) ssh-add ~/.ssh/id_rsa
+7) enter the same passphrase
+8) clip < ~/.ssh/id_rsa.pub
 
 In github remote
 1) click profile picture
@@ -26,3 +26,6 @@ In vscode terminal
 6) git push origin master
 7) enter paraphrase
 8) done.
+
+The other side
+git pull origin master --allow-unrelated-histories
