@@ -2,8 +2,8 @@
 In git bash
 1) ssh-keygen -t rsa -b 4096 -C "<input email addresss here>"
 2) copy the default path then press enter when prompt which file to save the key 
-   (if already exist press enter again)
-3) enter a passphrase
+   (if already exist overwrite it)
+3) enter a passphrase (can be empty, empty is easier)
 4) enter again
 5) eval $(ssh-agent -s)
 6) ssh-add ~/.ssh/id_rsa
@@ -24,8 +24,11 @@ In vscode terminal
 4) copy the SSH url in github
 5) git remote add origin <paste SSH url here>
 6) git push origin master
-7) enter paraphrase
+7) (enter passphrase if have passphrase)
 8) done.
 
-The other side
-git pull origin master --allow-unrelated-histories
+The other vscode computer
+1) git init
+2) copy the SSH url in github
+3) git remote add origin <paste SSH url here>
+4) git pull origin master --allow-unrelated-histories
