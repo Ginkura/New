@@ -32,3 +32,5 @@ The other vscode computer
 2) copy the SSH url in github
 3) git remote add origin <paste SSH url here>
 4) git pull origin master --allow-unrelated-histories
+
+added too
